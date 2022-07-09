@@ -29,12 +29,17 @@ environment:
 dependencies:
   animated_text_kit: ^4.2.1
   carousel_pro: ^1.0.0
+  cloud_firestore: ^3.2.1
   configurable_expansion_tile: ^1.0.0
   cupertino_icons: ^1.0.2
+  email_validator: ^2.0.1
+  firebase_auth: ^3.4.1
   flutter:
     sdk: flutter
   flutter_svg: ^1.0.3
+  font_awesome_flutter: ^10.1.0
   google_fonts: ^2.3.2
+  google_sign_in: ^5.4.0
   smooth_star_rating: ^1.1.1
 
 dev_dependencies:

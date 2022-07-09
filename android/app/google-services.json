@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "958511667628",
+    "project_id": "killdbug-travel",
+    "storage_bucket": "killdbug-travel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958511667628:android:f15900323f99b22ea10209",
+        "android_client_info": {
+          "package_name": "com.example.travelapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958511667628-org5a7nvgobpdbb43ns0r9qtpbcudnja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelapp1",
+            "certificate_hash": "9eaf2352c68c032477c28ee45f896dc03f055972"
+          }
+        },
+        {
+          "client_id": "958511667628-ndntshs5apm9eo0jvrrf5f0pbbd2evh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhPwPBihdr3-6L_nN806cvc-YDtvyRCl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958511667628-ndntshs5apm9eo0jvrrf5f0pbbd2evh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

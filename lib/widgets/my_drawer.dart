@@ -5,7 +5,7 @@ import 'package:travelapp1/widgets/my_drawer_list.dart';
 Drawer myDrawer() {
   return Drawer(
     width: 280,
-    backgroundColor:  Colors.black87,
+    backgroundColor: Color(0xfff303030),
     child: SingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,

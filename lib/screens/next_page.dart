@@ -281,17 +281,17 @@ class _NextPageState extends State<NextPage> {
                   ),
                 ),
               ),
-            const SizedBox(
-               height: 20,
-             ),
-             AnimationBulding(),
+              const SizedBox(
+                height: 20,
+              ),
+              AnimationBulding(),
             ]),
           ),
           //
         ],
       ),
       drawer: Drawer(
-        backgroundColor: Colors.black87,
+        backgroundColor: Color(0xfff303030),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -305,6 +305,3 @@ class _NextPageState extends State<NextPage> {
     );
   }
 }
-
-
-

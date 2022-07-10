@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
+      final user = FirebaseAuth.instance.currentUser!;
   final _pageController = PageController(initialPage: 0);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
   late AnimationController _controller;
@@ -89,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen>
                 Scaffold(
                   backgroundColor: Colors.transparent,
                   key: _key,
-                  drawer: myDrawer(),
+                  drawer: myDrawer(context),
                   body: Container(
                     color: Colors.transparent,
                     height: 38.6,
@@ -141,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen>
                         child: GestureDetector(
                           onTap: () {
                             _pageController.animateToPage(1,
-                                duration: const Duration(milliseconds: 2000),
+                                duration: const Duration(seconds: 5),
                                 curve: Curves.bounceInOut);
                           },
                           child: SizedBox(
@@ -159,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen>
                 )
               ],
             ),
-            NextPage(),
+            const NextPage(),
           ],
         ),
       ),

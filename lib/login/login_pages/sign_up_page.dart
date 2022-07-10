@@ -225,7 +225,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
     } on FirebaseAuthException catch (e) {
       // ignore: avoid_print
       print(e);
-      Utils.showSnackBar(e.message);
+      Utils.showSnackBar(e.message, context);
     }
     navigatorKey.currentState!.popUntil((route) => route.isFirst);
   }

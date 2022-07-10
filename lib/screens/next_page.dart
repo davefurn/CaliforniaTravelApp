@@ -297,7 +297,7 @@ class _NextPageState extends State<NextPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               MyHeaderDrawer(),
-              Align(alignment: Alignment.bottomLeft, child: myDrawerList()),
+              Align(alignment: Alignment.bottomLeft, child: myDrawerList(context)),
             ],
           ),
         ),

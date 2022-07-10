@@ -142,13 +142,13 @@ class _ForgotPassWordPageState extends State<ForgotPassWordPage> {
       await FirebaseAuth.instance
           .sendPasswordResetEmail(email: emailController.text.trim());
 
-      Utils.showSnackBar('Password Reset Email Sent');
+      Utils.showSnackBar('Password Reset Email Sent', context);
 
       navigatorKey.currentState!.popUntil((route) => route.isFirst);
     } on FirebaseAuthException catch (e) {
       // ignore: avoid_print
       print(e);
-      Utils.showSnackBar(e.message);
+      Utils.showSnackBar(e.message, context);
       Navigator.of(context).pop();
     }
   }
